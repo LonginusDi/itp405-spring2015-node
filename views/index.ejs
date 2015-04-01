@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Search Form for Dvds</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">  
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+	<div class="container col-md-6">
+		<h1>DVD Search</h1>
+		<form role="form" action="/dvds" method="get">
+			<div class="form-group">
+				<label for="title">Title: </label>
+				<input type="text" name="title" class="form-control">
+			</div>
+			<div class="form-group">
+				<label for="award">Award: </label>
+				<select name="award" class="form-control">
+					<option value="oscar">Oscar</option>
+					<option value="grammy">Grammy</option>
+				</select>
+			</div>
+			<div class="form-group"><input class="btn btn-primary btn-block" type="submit" value="search"></div>
+		</form>
+	</div>
+</body>
+</html>
